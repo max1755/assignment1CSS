@@ -1,0 +1,310 @@
+/*Simple reset*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*Import Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Pontano+Sans&display=swap');
+
+/*I tried to use rems for font, ems for spacing, and pixels for minor adjustments*/
+
+/*General*/
+
+body {
+	background-image: linear-gradient(#1A446B,#7ACB63, #1A446B);
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*Spacing General*/
+
+h3+p {
+	margin-top: 1em;
+}
+
+/*Summary*/
+
+.summary {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 2em;
+	line-height: 1.5;
+}
+
+.summary a {
+	color: rgba(255, 255, 255, 0.75);
+	border: rgba(255, 255, 255, 0.5) 2px solid;
+	border-radius: 8px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.summary a:hover {
+	color: rgba(0, 0, 0, 0.75);
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*Header Styles*/
+
+header {
+	border: 2px solid #333;
+	font-family: 'Pontano Sans', sans-serif;
+	position: relative;
+	height: 40vh;
+	width: 100vw;
+	background-image: url(images/zentemple.png);
+	background-size: cover;
+	background-repeat: no repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.intro h1 {
+	color: #E5E7E9;
+	text-shadow: 2px 2px #333;
+	font-size: 3rem;
+}
+
+.intro h2 {
+	color: rgba(255, 255, 255, 0.75);
+	text-shadow: 2px 2px #333;
+	font-size: 1.5rem;
+	position: absolute;
+	/*Centering*/
+	bottom: 1em;
+	left: 35vw;
+	right: 35vw;
+}
+
+/*Preamble*/
+
+.preamble {
+	margin-left: 2em;
+	margin-right: 2em;
+	width: 90vw;
+}
+
+.preamble p~p {
+	margin-top: 1em;
+}
+
+.preamble h3 {
+	font-family: 'Julius Sans One', sans-serif;
+}
+
+/*Main Supporting*/
+
+#zen-supporting {
+	width: 90vw;
+	margin: 1em;
+	padding-top: 2em;
+	padding-left: 7em;
+}
+
+#zen-supporting p {
+	margin-bottom: 1em;
+}
+
+#zen-supporting p::first-letter {
+	font-size: larger;
+}
+
+#zen-supporting div:nth-child(odd) {
+	border: #333 2px solid;
+	border-radius: 8px;
+	padding: 8px;
+}
+
+#zen-supporting h3 {
+	color: rgba(255, 255, 255, 0.75);
+	text-shadow: 2px 2px #333;
+}
+
+/*Explanation*/
+
+.explanation {
+	width: 20vw;
+	height: fit-content;
+	display: inline;
+	float:left;
+}
+
+/*Participation*/
+
+.participation {
+	padding-left: 6vw;
+	padding-right: 6vw;
+	width: 20vw;
+	height: fit-content;
+	float:left;
+	display: inline;
+}
+
+/*Participation and Requirements links*/
+
+.participation a,
+.requirements a {
+	color: rgba(255, 255, 255, 0.75);
+}
+
+.participation a:hover,
+.requirements a:hover {
+	color: rgba(0, 0, 0, 0.75);
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*Benefits*/
+
+.benefits {
+	width: 20vw;
+	height: fit-content;
+	display: inline-block;
+}
+
+/*Requirements*/
+
+.requirements {	
+	width: 30vw;
+	padding-top: 2vw;
+	display: contents;
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.requirements h3+p {
+	border-width: 4px;
+	border-top-style: solid;
+	border-image: linear-gradient(to left, #fff, #333) 1;
+	padding-top: 0.7em;
+}
+
+/*Sidebar and Footer*/
+
+.design-selection{
+
+	flex:none;
+	display:inline-block;
+	position:absolute;
+	bottom:-40em;
+	background-color: aliceblue;
+	padding-left: 5vw;
+	width: fit-content;
+	overflow-x:hidden;
+	overflow-y: hidden;
+	height: 1.5rem;
+}
+
+.design-selection:hover{
+	height:11em;
+	padding-right: 1em;
+}
+
+.design-selection a:nth-child(even){
+	color:#38C22C;
+	text-shadow: 1px 1px #333;
+}
+
+.design-selection a:hover{
+	color:#F73131;
+}
+
+.design-archives {
+	flex:none;
+	display:inline-block;
+	position:absolute;
+	bottom:-45em;
+	background-color: aliceblue;
+	padding-left: 5vw;
+	width: fit-content;
+	overflow-x:hidden;
+	overflow-y: hidden;
+	height: 1.5rem;
+}
+
+.design-archives:hover{
+	height:fit-content;
+	padding-right: 2em;
+}
+
+.design-archives a:hover{
+	color:#F73131;
+}
+
+footer {
+	background-image: linear-gradient(to right,#1F618D,#5DADE2, #1F618D);
+	display:block;
+	width:fit-content;
+	padding: 0em 10em 0em 10em;
+	margin-top: 1em;
+}
+
+footer a{
+	padding-left: 2em;
+	padding-right: 2em;
+	display:inline-block;
+	transition: 0.5s;
+}
+
+ footer a:hover {
+	transform: scale(1.5);
+	color:#fff;
+ }
+
+/*resources*/
+
+#zen-resources {
+	width:100%;
+	height: 15vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	font-size: large;
+	color: rgba(255, 255, 255, 0.75);
+	text-shadow: 2px 2px #333;
+	padding: 1em;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-family: 'Julius Sans One', sans-serif;
+}
+
+#zen-resources h3 {
+	position: absolute;
+	left: 1em;
+}
+
+#zen-resources>ul {
+	margin-top: 2.5em;
+}
+
+#zen-resources>ul>li {
+	display: inline-block;
+	/*Change list display to horizontal*/
+}
+
+#zen-resources>ul>li>a {
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 0.5rem;
+	font-size: 1.4rem;
+	margin: 10px;
+	padding: 0.2rem;
+}
+
+#zen-resources>ul>li>a:hover {
+	background-color: #fff;
+	color: rgba(0, 0, 0, 0.5);
+	text-shadow: none;
+}
+
+#zen-resources>ul>li>a:active {
+	background-color:#F73131;;
+	color: rgba(0, 0, 0, 0.5);
+	text-shadow: none;
+}
